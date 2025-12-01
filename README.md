@@ -13,16 +13,12 @@ Principais funcionalidades:
 - Postar o registro de um visitante
 - Deletar dados por ID
 
----
-
 ## 🧠 Contexto acadêmico
 
 Este projeto foi desenvolvido como parte da avaliação da disciplina **Linguagem de programação II**, com o objetivo de:
 
 - Praticar conceitos de **POO, Banco de dados e gerenciamento de API**
 - Aplicar boas práticas de **desenvolvimento de APIs**
-
----
 
 ## 🛠 Tecnologias utilizadas
 
@@ -31,8 +27,6 @@ Este projeto foi desenvolvido como parte da avaliação da disciplina **Linguage
 - Banco de dados: **MySQL**
 - Outras dependências:
   - Entity Framework, Swagger.
-
----
 
 ## 📁 Arquitetura do projeto
 
@@ -65,7 +59,7 @@ Questionario/
 ```
 ---
 
-# ⚙️ Pré-requisitos
+## ⚙️ Pré-requisitos
 
 Para rodar o projeto localmente, você vai precisar de:
 
@@ -73,15 +67,11 @@ Para rodar o projeto localmente, você vai precisar de:
 - Banco de dados instalado MySQL
 - Git (opcional, mas recomendado)
 
----
-
-# 🚀 Como executar o projeto
+## 🚀 Como executar o projeto
 
 Em desenvolvimento
 
----
-
-# Principais endpoints
+## Principais endpoints
 👤 Exemplo: Usuários
 
 GET /api/usuarios
@@ -105,17 +95,13 @@ Atualiza os dados de um usuário.
 DELETE /api/usuarios/{id}
 Remove um usuário do sistema.
 
----
-
-# 👥 Autor
+## 👥 Autor
 
 Desenvolvido por João Gabriel da Silva
 GitHub: @JoaoGRSilva
 E-mail: joaogabriel975@hotmail.com
 
----
-
-# 📄 Licença
+## 📄 Licença
 
 Este projeto foi desenvolvido para fins acadêmicos.
 Você pode reutilizar partes do código para estudo, desde que mantenha os devidos créditos.
