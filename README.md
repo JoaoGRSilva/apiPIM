@@ -4,29 +4,31 @@
 
 ## 📌 Sobre o projeto
 
-A **controladora de resultados** é uma API desenvolvida para **controlar os dados inputados pelos visitantes alem de salvar as informações caso o visitante desejasse preencher**.  
-Ela permite que o usuário **gerencie os dados recebidos, envie para a empresa os dados sobre a sua visita e armezenar os dados recebidos**.
+A **API de Questionário** é uma aplicação desenvolvida para **registrar, gerenciar e armazenar dados enviados por visitantes**, permitindo que a empresa consulte e analise as informações recebidas.
 
-Principais funcionalidades:
+Ela permite:
 
-- Ter a listagem sobre os dados recebidos dentro da database, geral ou por ID
-- Postar o registro de um visitante
-- Deletar dados por ID
+- Gerenciar os dados enviados pelos visitantes
+- Listar informações gerais ou filtradas por ID
+- Registrar novos visitantes
+- Excluir registros específicos
 
 ## 🧠 Contexto acadêmico
 
-Este projeto foi desenvolvido como parte da avaliação da disciplina **Linguagem de programação II**, com o objetivo de:
+Este projeto foi desenvolvido como parte da avaliação da disciplina **Linguagem de Programação II**, com os objetivos de:
 
-- Praticar conceitos de **POO, Banco de dados e gerenciamento de API**
-- Aplicar boas práticas de **desenvolvimento de APIs**
+- Praticar conceitos de **POO, banco de dados e desenvolvimento de APIs**
+- Aplicar boas práticas de arquitetura de software
+- Utilizar ferramentas modernas do ecossistema **.NET**
 
 ## 🛠 Tecnologias utilizadas
 
-- Linguagem: **C# (.NET)**
-- Framework: **ASP.NET Core**
-- Banco de dados: **MySQL**
-- Outras dependências:
-  - Entity Framework, Swagger.
+- **Linguagem:** C# (.NET 8)
+- **Framework:** ASP.NET Core
+- **Banco de dados:** MySQL
+- **Dependências principais:**
+  - Entity Framework Core
+  - Swagger (para documentação da API)
 
 ## 📁 Arquitetura do projeto
 
@@ -35,24 +37,24 @@ A solução está organizada da seguinte forma:
 ```text
 Questionario/
 ├── Properties/
-│   ├── launchSettings.json
+│   └── launchSettings.json
 ├── Controllers/
 │   ├── QuestionarioController.cs
 │   └── VisitanteController.cs
 ├── Data/
 │   ├── Map/
-│       ├── ObraMap.cs
-│       └── VisitanteMap.cs
-│   ├── QuestionarioDBContext.cs
+│   │   ├── ObraMap.cs
+│   │   └── VisitanteMap.cs
+│   └── QuestionarioDBContext.cs
 ├── Migrations/
-│   ├── QuestionarioDBContextModelSnapshot.json
+│   └── QuestionarioDBContextModelSnapshot.json
 ├── Models/
 │   ├── ObraModel.cs
 │   └── VisitanteModel.cs
 ├── Repositorios/
 │   ├── Interfaces/
-│       ├── IVisitanteRepositorio.cs
-│   ├── VisitanteRepositorio.cs
+│   │   └── IVisitanteRepositorio.cs
+│   └── VisitanteRepositorio.cs
 ├── appsettings.json
 ├── Program.cs
 └── Questionario.http
@@ -84,10 +86,16 @@ POST /api/usuarios
 Cria um novo usuário.
 Body (JSON):
 ```
-{
-  "nome": "João",
-  "email": "joao@example.com"
-}
+  {
+    "id": 0,
+    "nome": "string",
+    "email": "string",
+    "questao1": 0,
+    "questao2": 0,
+    "questao3": 0,
+    "questao4": 0,
+    "questao5": 0
+  }
 ```
 PUT /api/usuarios/{id}
 Atualiza os dados de um usuário.
