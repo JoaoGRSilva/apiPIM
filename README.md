@@ -98,7 +98,6 @@ Body (JSON):
   "nome": "João",
   "email": "joao@example.com"
 }
-
 ```
 PUT /api/usuarios/{id}
 Atualiza os dados de um usuário.
@@ -108,7 +107,7 @@ Remove um usuário do sistema.
 
 ---
 
-#👥 Autor
+# 👥 Autor
 
 Desenvolvido por João Gabriel da Silva
 GitHub: @JoaoGRSilva
