@@ -1,6 +1,6 @@
-# <API de Questionario>
+# API de Questionario
 
-> Projeto desenvolvido para a disciplina **<Linguagem de programação>** do curso de **<Analise e desenvolvimento de sistemas>** – <UNIP>.
+> Projeto desenvolvido para a disciplina **Linguagem de programação** do curso de **Analise e desenvolvimento de sistemas** – UNIP.
 
 ## 📌 Sobre o projeto
 
